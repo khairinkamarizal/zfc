@@ -73,6 +73,7 @@ body {
       rgba(73, 252, 195, 0.51)
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
   }
