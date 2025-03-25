@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zero Float Club</title>
+    <meta
+      name="description"
+      content="Where Great Traders Are Born" />
+    <link
+      href="../src/css/style.css"
+      rel="stylesheet" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../src/img/logo_white.webp" />
+  </head>
+  <body>
+    <div class="container-kk">
+      <div class="card">
+        <img
+          class="logo p-20"
+          src="src/img/zfc_logo.webp" />
+        <div class="divider"></div>
+        <div
+          class="content"
+          id="main"
+          style="display: flex">
+          <div class="subText">
+            <ion-icon name="flash"></ion-icon
+            ><span>Free Telegram Channel!</span>
+          </div>
+          <div class="mainTitle">
+            Join Our <span class="gradient">Exclusive</span> Trading Community
+          </div>
+          <div class="desc">
+            Access expert insights, premium signals, and a thriving community.
+          </div>
+          <div class="btn-container">
+            <a
+              href="#"
+              class="btn-main"
+              ><span>Unlock Access</span
+              ><ion-icon name="arrow-forward"></ion-icon></a
+            ><a
+              href="#"
+              id="register"
+              class="btn-sec"
+              ><span>Register</span><ion-icon name="heart"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div
+          class="content link"
+          id="second"
+          style="display: none">
+          <div class="mainTitle-2">
+            Register at <span class="gradient">Trusted Brokers</span>
+          </div>
+          <a
+            href="#"
+            class="btn-link"
+            ><div class="two">
+              <img src="src/img/xm.svg" /><span>XM Broker</span>
+            </div>
+            <ion-icon name="arrow-forward-outline"></ion-icon></a
+          ><a
+            href="#"
+            class="btn-link"
+            ><div class="two">
+              <img src="src/img/jm.svg" /><span>JustMarkets</span>
+            </div>
+            <ion-icon name="arrow-forward-outline"></ion-icon
+          ></a>
+          <a
+            href="#"
+            class="btn-back"
+            id="back"
+            ><ion-icon name="chevron-back-outline"></ion-icon>Back</a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="footer p-20">2025 © Zero Float Club</div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#register").click(function () {
+          $("#main").fadeOut(300, function () {
+            // Fade out first, then show second
+            $("#second").css("display", "flex").hide().fadeIn(500);
+          });
+        });
+        $("#back").click(function () {
+          $("#second").fadeOut(300, function () {
+            // Fade out first, then show second
+            $("#main").css("display", "flex").hide().fadeIn(500);
+          });
+        });
+      });
+    </script>
+    <!-- Scripts End -->
+  </body>
+</html>
