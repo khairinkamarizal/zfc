@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url("/src/img/bg.png"), #111;
+  background: url("src/img/bg.png"), #111;
   background-repeat: no-repeat;
   font-family: "Inter", sans-serif;
   background-size: cover;
@@ -28,7 +28,7 @@ body {
 
 .card {
   width: 540px;
-  background: url("/src/img/grain.png"),
+  background: url("src/img/grain.png"),
     linear-gradient(24deg, rgba(255, 255, 255, 0.031), rgba(0, 0, 0, 0.071));
   backdrop-filter: blur(0.4rem);
   border-radius: 15px;
